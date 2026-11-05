@@ -130,3 +130,31 @@ if (idadeUsuario >= 18 && possuiCadastro && !usuarioBloqueado) {
 console.log("Informação");
 console.warn("Atenção");
 console.error("Erro");
+
+const clientePedido = "Carlos";
+const valorPedido = 500;
+const prioridadePedido = "alta";
+const pedidoAtrasado = true;
+
+let descontoPedido = 0;
+
+if (valorPedido > 300) {
+    descontoPedido = valorPedido * 10 / 100;
+} else {
+    descontoPedido = 0;
+}
+const totalPedido = valorPedido - descontoPedido;
+
+if (prioridadePedido === "alta" && pedidoAtrasado) {
+    console.log("ATENÇÃO IMEDIATA");
+} else {
+    console.log("Acompanhamento normal");
+}
+
+
+console.log(`Cliente: ${clientePedido}`);
+console.log(`Valor original: R$ ${valorPedido}`);
+console.log(`Desconto: R$ ${descontoPedido}`);
+console.log(`Total: R$ ${totalPedido}`);
+console.log(`Prioridade: ${prioridadePedido}`);
+console.log(`Atrasado: ${pedidoAtrasado}`);
