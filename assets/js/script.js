@@ -75,3 +75,58 @@ console.log(`Disponível: ${disponivelMouse}`);
 console.log(typeof nomeProdutoCompra);
 console.log(typeof precoMouse);
 console.log(typeof disponivelMouse);
+
+const notaAluno = 75;
+
+if (notaAluno >= 60) {
+    console.log("Aprovado");
+}
+const notaAvaliacao = 55;
+
+if (notaAvaliacao >= 60) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+
+const notaClassificacao = 82;
+
+if (notaClassificacao >= 90) {
+    console.log("Excelente");
+} else if (notaClassificacao >= 75) {
+    console.log("Muito bom");
+} else if (notaClassificacao >= 60) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+const notaFinalAluno = 70;
+const frequenciaAluno = 80;
+
+if (notaFinalAluno >= 60 && frequenciaAluno >= 75) {
+    console.log("Aluno aprovado");
+} else {
+    console.log("Aluno não aprovado");
+}
+const prioridade = "alta";
+const atrasado = true;
+
+if (prioridade === "alta" && atrasado) {
+    console.log("ATENÇÃO IMEDIATA");
+} else {
+    console.log("Acompanhamento normal");
+}
+const idadeUsuario = 20;
+const possuiCadastro = true;
+const usuarioBloqueado = false;
+
+if (idadeUsuario >= 18 && possuiCadastro && !usuarioBloqueado) {
+    console.log("Acesso permitido");
+} else {
+    console.log("Acesso negado");
+}
+
+
+console.log("Informação");
+console.warn("Atenção");
+console.error("Erro");
